@@ -1,4 +1,4 @@
-import lab3.DiscreteSecurityModel;
+package lab3;
 
 import java.io.BufferedReader;
 import java.io.IOException;
