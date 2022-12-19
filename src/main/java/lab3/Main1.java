@@ -9,6 +9,7 @@ public class Main1 {
         BufferedReader reader = new BufferedReader(
                 new InputStreamReader(System.in));
         DiscreteSecurityModel info = new DiscreteSecurityModel(reader);
+        info.printMatrix();
         boolean flagMenu = true;
         while(flagMenu){
             System.out.print("Введите имя пользователя: ");

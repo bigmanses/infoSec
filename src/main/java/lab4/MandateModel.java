@@ -2,9 +2,7 @@ package lab4;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Objects;
 
 public class MandateModel {
     /** Имена объектов */
@@ -13,8 +11,8 @@ public class MandateModel {
     private final String[] usersName = new String[]{"Mansur", "Alexandr", "Konstantin", "Andrey", "Nikita", "Danya", "Mihail", "Valera", "Ivan", "Artur"};
     private final String[] access = new String[]{"free access", "secret", "super secret"};
     private final HashMap<String, Integer> weight = new HashMap<>();
-    private HashMap<String, String> objectsAccess;
-    private  HashMap<String,String> subjectsAccess;
+    private final HashMap<String, String> objectsAccess;
+    private final HashMap<String,String> subjectsAccess;
     private String userName;
     /** Ридер для чтения */
     private final BufferedReader reader;
@@ -73,8 +71,6 @@ public class MandateModel {
             System.out.println();
             if(flagExit < 1) return flagExit;
         }
-
-
     }
 
     /**
@@ -89,6 +85,7 @@ public class MandateModel {
         }
         System.out.println();
     }
+
     /**
      * Метод првоерки на корректность ввода команды
      * @param command - команда, которую ввел пользователь
@@ -153,6 +150,7 @@ public class MandateModel {
         }
         System.out.println();
     }
+
     /**
      * Метод проверки на наличия пользователя
      * @param name - имя возможного пользователя
@@ -161,6 +159,4 @@ public class MandateModel {
     public boolean isUser(String name){
         return subjectsAccess.get(name) != null;
     }
-
-
 }
