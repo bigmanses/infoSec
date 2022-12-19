@@ -154,6 +154,7 @@ public class DiscreteSecurityModel {
             System.out.print(nameFile + ":" + Arrays.toString(commands.get(access.get(nameFile))));
             System.out.println();
         }
+        System.out.println();
     }
 
     /**
